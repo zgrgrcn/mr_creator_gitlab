@@ -1,0 +1,6 @@
+{
+  "name": "mr creator",
+  "description": "create mr for gitlab projects",
+  "version": "1.0",
+  "manifest_version": 3
+}
