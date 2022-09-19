@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+
+    <!-- target micro-service -->
+    <select name="drop-down" id="drop-down">
+        <option value="provision">provision</option>
+        <option value="si-bpmn">si-bpmn</option>
+    </select>
+    <!-- branch prefix -->
+    <select name="drop-down" id="branch-prefix">
+        <option value="VFALFT">VFALFT</option>
+    </select>
+
+    <!-- source branch -->
+    <input type="text" placeholder="branch name" id="sourceBranch">
+
+    <!-- target branches -->
+    <form id="target-branch-form">
+        <fieldset>
+            <legend>What are the target branches?</legend>
+            <input id="develop" type="checkbox" name="develop" value="develop" checked>develop<br>
+            <input id="sit1" type="checkbox" name="sit1" value="sit1" checked>sit1<br>
+            <input id="uat" type="checkbox" name="uat" value="uat">uat<br>
+            <br>
+        </fieldset>
+    </form>
+    <button id="button-openPages">Create Merge Request</button>
+
+    <script src="popup.js"></script>
+
+
+</body>
+
+</html>
