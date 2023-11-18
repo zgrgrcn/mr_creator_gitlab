@@ -1,12 +1,11 @@
 button {
     height: 30px;
-    width: 30px;
+    width: 160px;
     outline: none;
-    margin: 10px;
-    color: black;
+    margin: 5px;
     border-radius: 2px;
     transition-duration: 0.4s;
-    width: 90%;
+    margin-top: 10px;
   }
   
   button.current {
@@ -17,4 +16,14 @@ button {
   button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
+  }
+
+  select {
+    width: 160px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 2px;
+    outline: none;
+    color: black;
+    transition-duration: 0.4s;
   }

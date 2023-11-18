@@ -8,17 +8,18 @@
 <body>
 
     <!-- target micro-service -->
-    <select name="drop-down" id="drop-down">
-        <option value="provision">provision</option>
-        <option value="si-bpmn">si-bpmn</option>
+    <select name="drop-down" id="drop-down" onchange="getBranches(this.value);">
+        <!-- <option value="provision">provision</option>
+        <option value="si-bpmn">si-bpmn</option> -->
     </select>
     <!-- branch prefix -->
-    <select name="drop-down" id="branch-prefix">
-        <option value="VFALFT">VFALFT</option>
+    <select name="drop-down" id="branch-drop-down">
+        <!-- <option value="VFALFT">VFALFT</option>
+        <option value="VALFT">VALFT</option> -->
     </select>
 
     <!-- source branch -->
-    <input type="text" placeholder="branch name" id="sourceBranch">
+    <!-- <input type="text" placeholder="branch name" id="sourceBranch"> -->
 
     <!-- target branches -->
     <form id="target-branch-form">
@@ -26,14 +27,14 @@
             <legend>What are the target branches?</legend>
             <input id="develop" type="checkbox" name="develop" value="develop" checked>develop<br>
             <input id="sit1" type="checkbox" name="sit1" value="sit1" checked>sit1<br>
-            <input id="uat" type="checkbox" name="uat" value="uat">uat<br>
+            <input id="uat" type="checkbox" name="uat" value="uat" checked>uat<br>
             <br>
         </fieldset>
     </form>
     <button id="button-openPages">Create Merge Request</button>
 
-    <script src="popup.js"></script>
 
+    <script src="popup.js"></script>
 
 </body>
 

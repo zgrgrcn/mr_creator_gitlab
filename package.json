@@ -1,0 +1,22 @@
+{
+  "name": "mr_creator_gitlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "options.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgrgrcn/mr_creator_gitlab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zgrgrcn/mr_creator_gitlab/issues"
+  },
+  "homepage": "https://github.com/zgrgrcn/mr_creator_gitlab#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

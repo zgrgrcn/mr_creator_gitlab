@@ -1,7 +1,7 @@
 {
-  "name": "mr creator by zgrgrcnf",
+  "name": "mr creator by zgrgrcn",
   "description": "create mr for gitlab projects",
-  "version": "1.0",
+  "version": "3.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
@@ -11,5 +11,14 @@
   },
   "icons": {
     "128": "/images/mrCreatorLogo.png"
+  },
+  "permissions": ["storage", "contextMenus"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
   }
 }
